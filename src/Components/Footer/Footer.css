@@ -1,0 +1,19 @@
+footer {
+  background-color: rgb(60, 62, 68);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+  color: white;
+}
+
+footer div {
+  margin-right: 20px;
+}
+
+.footer-status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+}

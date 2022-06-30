@@ -1,0 +1,29 @@
+.card-container {
+  width: 460px;
+  height: 200px;
+  background-color: rgb(60, 62, 68);
+  display: flex;
+  border-radius: 15px;
+  color: white;
+  margin: 10px;
+}
+
+.card-container img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+small {
+  color: grey;
+}
+
+.status {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
