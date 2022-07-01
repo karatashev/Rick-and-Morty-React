@@ -1,10 +1,10 @@
 
-import "./ErrorComponent.css"
+import "./ErrorComponent.scss"
 
 const ErrorComponent = () => {
   return (
     <div className="error-container">
-      <h2>This charackter does not exist</h2>
+      <h2>This character does not exist</h2>
     </div>
   );
 }
