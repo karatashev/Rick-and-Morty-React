@@ -12,7 +12,7 @@ const CharactersPage = () => {
   const inputRef = useRef(null);
 
   useEffect(() => {
-    inputRef.current.focus();
+    // inputRef.current.focus();
     fetch(`https://rickandmortyapi.com/api/character/?name=${search}`)
       .then((response) => response.json())
       .then((data) => {
@@ -37,13 +37,17 @@ const CharactersPage = () => {
     <div>
       <div className="input-wrapper">
         <form onSubmit={handleSubmit}>
+          <div className="input-group">
           <input
-            className="type-input"
+            className="input"
             onChange={handleChange}
             ref={inputRef}
             type="text"
-            placeholder="Search..."
+            id="name"
+            required
           />
+          <label htmlFor="name" className="input-label">Type</label>
+          </div>
           <input className="search-btn" type="submit" value="Search" />
         </form>
       </div>
