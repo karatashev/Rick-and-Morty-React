@@ -1,8 +1,8 @@
 footer {
-  background-color: rgb(60, 62, 68);
+  background-color: var(--backgroundBlack);
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 60px;
   align-items: center;
   color: white;
 }

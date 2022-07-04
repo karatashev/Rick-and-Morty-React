@@ -1,28 +1,30 @@
-import "./Card.css";
+import { Link } from "react-router-dom";
+import "./Card.scss";
 
-const Card = ({ image, name, status, location, species }) => {
-
+const Card = ({ image, name, status, location, species, charId }) => {
   function getStatusColor(status) {
-    if (status === 'Alive') {
-        return 'green';
+    if (status === "Alive") {
+      return "green";
     }
-    if (status === 'Dead') {
-        return 'red';
+    if (status === "Dead") {
+      return "red";
     }
-    return 'black';
-}
+    return "black";
+  }
 
   return (
     <div className="card-container">
       <img src={image} alt={name} />
       <div className="card-content">
-        <h2>{name}</h2>
+        <Link className="link" to={`${charId}`}>
+          <h2>{name}</h2>
+        </Link>
         <div className="status">
           <div
             style={{
               width: "10px",
               height: "10px",
-              backgroundColor: getStatusColor(status),  
+              backgroundColor: getStatusColor(status),
               borderRadius: "50%",
               marginRight: "5px",
             }}
