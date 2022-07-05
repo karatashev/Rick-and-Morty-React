@@ -11,13 +11,15 @@ const CharactersPage = () => {
   const [query, setQuery] = useState("")
   const [search, setSearch] = useState("")
   const inputRef = useRef(null)
-  const characters = useFetch(
+  const  characters = useFetch(
     "https://rickandmortyapi.com/api/character/",
     `?name=${search}`
   )
 
+  console.log(characters)
+
   useEffect(() => {
-    inputRef.current.focus()
+    // inputRef.current.focus()
   }, [search])
   const handleChange = (e) => {
     setQuery(e.target.value)

@@ -1,33 +1,51 @@
 .card-details {
+  background-color: var(--backgroundBlack);
+  height: 100vh;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  background-color: var(--backgroundBlack);
-  padding-top: 45px;
-  padding-bottom: 45px;
-  color: white;
+  margin: 0;
+  padding: 0;
 
-  .char-img {
-    width: 400px;
+  .card-details-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5c5c5c;
+    padding: 50px;
+    color: white;
+    height: 80vh;
+    width: 300px;
+    margin: 0 auto;
     border-radius: 15px;
-  }
+    border: 2px solid orange;
 
-  .back-btn {
-    color: orange;
-    background-color: rgb(92, 92, 92);
-    height: 38px;
-    width: 120px;
-    border: 1px solid orange;
-    border-radius: 10px;
-    outline: none;
-    font-size: 18px;
+    .char-name {
+      border-bottom: 2px solid orange
+    }
 
-    &:hover {
-      cursor: pointer;
-      background-color: orange;
-      color: white;
-      transition: all 300ms ease;
+    .char-img {
+      width: 280px;
+      border-radius: 15px;
+
+    }
+
+    .back-btn {
+      color: orange;
+      background-color: #5c5c5c;
+      border: 1px solid orange;
+      border-radius: 10px;
+      outline: none;
+      font-size: 18px;
+      padding: 7px 35px;
+      margin: 10px 0;
+      &:hover {
+        cursor: pointer;
+        background-color: orange;
+        color: white;
+        transition: all 300ms ease;
+      }
     }
   }
 }
