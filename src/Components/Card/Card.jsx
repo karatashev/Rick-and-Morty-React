@@ -17,7 +17,7 @@ const Card = ({ image, name, status, location, species, charId }) => {
       <img src={image} alt={name} />
       <div className="card-content">
         <Link className="link" to={`${charId}`}>
-          <h2>{name}</h2>
+          <h2 style={{color: "orange"}}>{name}</h2>
         </Link>
         <div className="status">
           <div

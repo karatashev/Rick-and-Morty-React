@@ -1,0 +1,87 @@
+.table-wrapper {
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  height: 100%;
+  background-image: url("https://i.pinimg.com/originals/62/70/77/627077cc9bbbb7f41f3c41c9a219ae4f.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: (0.9);
+}
+
+//   .table {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+//     .table-head {
+//       display: flex;
+//       justify-content: space-around;
+//       flex-direction: row;
+
+//       .table-row {
+//         display: flex;
+//         justify-content: space-around;
+//         align-items: center;
+//         padding: 20px;
+//       }
+//       .table-row th {
+//         margin-right: 80px;
+//       }
+//     }
+  
+//   }
+
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+  width: 33%;
+}
+
+thead th:nth-child(2) {
+  width: 33%;
+}
+
+thead th:nth-child(3) {
+  width: 33%;
+}
+
+// tbody tr:nth-child(odd) {
+//   background-color: orange;
+// }
+
+// tbody tr:nth-child(even) {
+//   background-color: rgb(71, 71, 71);
+// }
+
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: white;
+  padding-bottom: 35px;
+}
+
+td {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 2px solid orange;
+}
+
+
+tbody td {
+  text-align: center;
+} 

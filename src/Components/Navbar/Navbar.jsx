@@ -14,10 +14,10 @@ const Navbar = () => {
       <div className="links-container">
         <ul className="links">
           <li>
-            <Link to="/">Characters</Link>
+            <Link className="nav-links" style={{textDecoration: "none", color: "black", fontSize: "20px"}} to="/">Characters</Link>
           </li>
           <li>
-            <Link to="/episodes">Episodes</Link>
+            <Link style={{textDecoration: "none", color: "black", fontSize: "20px"}} to="/episodes">Episodes</Link>
           </li>
         </ul>
       </div>

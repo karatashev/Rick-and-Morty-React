@@ -19,8 +19,9 @@ const CharactersPage = () => {
   console.log(characters)
 
   useEffect(() => {
-    // inputRef.current.focus()
+    inputRef.current.focus()
   }, [search])
+
   const handleChange = (e) => {
     setQuery(e.target.value)
   }
